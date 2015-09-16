@@ -17,6 +17,7 @@ void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr 
   - kubuntu
     - `gazebo TrutleBot World` を開く。コンソールに色々出てきてgazeboが立ち上がる。
     - `Publicized address: 192.168.183.128` がgazeboっぽい。
+    - というか、デスクトップの左上にでかーく書いてあった…。
   - Windowsマシン
     - とりあえずつなげる
       - ネットワーク接続からVmWareNetworkの仮想ネットワークを全て有効にする。
