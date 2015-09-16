@@ -27,5 +27,5 @@ void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr 
       - 適当にsubscribeは出来るはず。多分publishできない。
     - Fire Wallの設定
       - Fire Wall を解放しないとpublishだけできないっぽい。
-      - パブリック、プライベートのTCP, UDP共に解放する。2(pub/pri)x2(tcp/udp)=合計4つの許可設定を追加する。
+      - VMと接続中のネットワークのTCPを解放する。UDPは切っても切らなくても挙動は変わらない。
       - 運が良ければpublish時にWindowsが勝手にダイアログを出してくれるので、そのまま許可する。
