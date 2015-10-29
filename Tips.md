@@ -12,6 +12,10 @@ void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr 
 }
 ```
 
+##Learning ROS for Robotics Programming
+# `catkin_make`した時、`opencv2/nonfree/features2d.hpp no such file or directory.`と怒られる。
+- `sudo add-apt-repository --yes ppa:xqms/opencv-nonfree sudo apt-get update sudo apt-get install libopencv-nonfree-dev`
+
 ##Matlab on Windows
 - kubuntu のturtlebotと繋ぐ
   - kubuntu
