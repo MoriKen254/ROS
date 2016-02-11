@@ -1,0 +1,4 @@
+- catkin_find
+ - https://github.com/ros/catkin/blob/3b8a3b9607adff98ed32cfd3b6d6ea4aed647424/bin/catkin_find
+- find_in_workspaces.py
+ - https://github.com/ros/catkin/blob/7b1d85bff1dfa24a2ca5c8050037915f35ab8cec/python/catkin/find_in_workspaces.py
