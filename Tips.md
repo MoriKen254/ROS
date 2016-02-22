@@ -1,10 +1,16 @@
+#ros_control
+##指令値テスト
+```bash
+rostopic pub /fr01/steer_right_front_joint_position_controller/command std_msgs/Float64 -r 1 -- -1
+```
+
 #Compress Image
 ##Python
 - http://wiki.ros.org/ja/rospy_tutorials/Tutorials/WritingImagePublisherSubscriber
 
 ##C++
 - 情報がなさすぎるのでサンプルをメモしておく。たったコレだけのことなのに…。
-```bash
+```cpp
 void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr & compress_img_msg)
 {
     cv::Mat decoded_img;
@@ -14,7 +20,7 @@ void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr 
 
 # Learning ROS for Robotics Programming
 ## `catkin_make`した時、`opencv2/nonfree/features2d.hpp no such file or directory.`と怒られる。
-```
+```bash
 sudo add-apt-repository --yes ppa:xqms/opencv-nonfree
 sudo apt-get update
 sudo apt-get install libopencv-nonfree-dev
@@ -41,7 +47,7 @@ sudo apt-get install libopencv-nonfree-dev
 
 #QtCreaterでパスが通らず補完できない
 - 下記の`bash`を`source`する．
-  ```
+  ```bash
   #!/bin/bash
 
   # include path を作成する
