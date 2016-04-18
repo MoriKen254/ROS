@@ -59,3 +59,10 @@ sudo apt-get install libopencv-nonfree-dev
 
 # Gazebo でデバッグ
 - http://wiki.ros.org/pr2_simulator/Tutorials/RunningSimulatorWithGDB
+
+# OpenRAVE
+
+- IKFastのコマンド
+```bash
+python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=7 --savefile=output_ikfast61.cpp
+```
