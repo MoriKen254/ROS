@@ -56,3 +56,6 @@ sudo apt-get install libopencv-nonfree-dev
   # CPATHに追加
   export CPATH=${CPATH}:${include_path}
   ```
+
+# Gazebo でデバッグ
+- http://wiki.ros.org/pr2_simulator/Tutorials/RunningSimulatorWithGDB
