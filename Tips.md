@@ -61,8 +61,31 @@ sudo apt-get install libopencv-nonfree-dev
 - http://wiki.ros.org/pr2_simulator/Tutorials/RunningSimulatorWithGDB
 
 # OpenRAVE
+- Motomanのdae情報出力例
+```bash
+[morita@ mesh] (add-ikfast-plugin *%)$ openrave-robot.py sia5.dae --info links
+could not import scipy.optimize.leastsq
+name      index parents  
+-------------------------
+world     0              
+base_link 1     world    
+link_s    2     base_link
+link_l    3     link_s   
+link_e    4     link_l   
+link_u    5     link_e   
+link_r    6     link_u   
+link_b    7     link_r   
+link_t    8     link_b   
+tool0     9     link_t   
+-------------------------
+
+```
 
 - IKFastのコマンド
+```bash
+python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=2 --eelink=9 --freeindex=5 --savefile=output_ikfast92.cpp
+```
+
 ```bash
 python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=7 --savefile=output_ikfast61.cpp
 ```
