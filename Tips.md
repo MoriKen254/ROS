@@ -83,7 +83,7 @@ tool0     9     link_t
 
 - IKFastのコマンド
 ```bash
-python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=9 --freeindex=5 --savefile=output_ikfast92.cpp
+python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=9 --freeindex=6 --savefile=output_ikfast92.cpp
 ```
 
 ```bash
