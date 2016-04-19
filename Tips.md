@@ -86,6 +86,20 @@ tool0     9     link_t
 python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=9 --freeindex=6 --savefile=output_ikfast92.cpp
 ```
 
+output_ikfast92.cpp
+
+```cpp
+// l.15
+/// ikfast version 0x10000048 generated on 2016-04-19 20:59:47.751149
+↓
+/// ikfast version 61 generated on 2016-04-19 20:59:47.751149
+
+// l.26
+IKFAST_COMPILE_ASSERT(IKFAST_VERSION==0x10000048);
+↓
+IKFAST_COMPILE_ASSERT(IKFAST_VERSION==61);
+```
+
 ```bash
-python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=sia5.dae --iktype=transform6d --baselink=1 --eelink=7 --savefile=output_ikfast61.cpp
+rosrun moveit_ikfast create_ikfast_moveit_plugin.py motoman_sia5 arm motoman_sia5_moveit_plugins motoman_sia5_arm_ikfast_solver.cpp 
 ```
