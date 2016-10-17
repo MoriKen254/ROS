@@ -103,3 +103,23 @@ IKFAST_COMPILE_ASSERT(IKFAST_VERSION==61);
 ```bash
 rosrun moveit_ikfast create_ikfast_moveit_plugin.py motoman_sia5 arm motoman_sia5_moveit_plugins motoman_sia5_arm_ikfast_solver.cpp 
 ```
+
+# rosdep
+```bash
+cd hogehoge_ws
+rosdep install hoge_package
+```
+
+こんなエラーが出る時がある．
+```
+ERROR: the following packages/stacks could not have their rosdep keys resolved
+to system dependencies:
+hoge_package: Cannot locate rosdep definition for [hoge_required_package]
+```
+
+そういう時は以下のコマンド
+```bash
+cd hogehoge_ws
+rosdep update
+rosdep install hoge_package
+```
