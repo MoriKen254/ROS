@@ -123,3 +123,15 @@ cd hogehoge_ws
 rosdep update
 rosdep install hoge_package
 ```
+
+# Gazebo
+Gazebのworldモデルは以下のコマンドでDLできる．
+
+```bash
+$ wget -r -R "index\.html*" http://models.gazebosim.org/
+```
+
+`models.gazebosim.org/`というフォルダに入ってしまう．
+
+だから，中身は手動で`~/.gazebo/models`にコピーする．
+
