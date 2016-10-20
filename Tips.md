@@ -135,4 +135,5 @@ $ wget -r -R "index\.html*" http://models.gazebosim.org/
 
 だから，中身は手動で`~/.gazebo/models`にコピーする．
 
-[What namespace does gazebo expects?](http://answers.gazebosim.org/question/6870/what-namespace-does-gazebo-expects/)
+- [What namespace does gazebo expects?](http://answers.gazebosim.org/question/6870/what-namespace-does-gazebo-expects/)
+- [models.gazebosim.org/](http://models.gazebosim.org/)
