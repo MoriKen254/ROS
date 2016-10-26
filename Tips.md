@@ -137,3 +137,6 @@ $ wget -r -R "index\.html*" http://models.gazebosim.org/
 
 - [What namespace does gazebo expects?](http://answers.gazebosim.org/question/6870/what-namespace-does-gazebo-expects/)
 - [models.gazebosim.org/](http://models.gazebosim.org/)
+
+# Test関連
+- [How can I integrate my ROS package with Travis continuous integration?](http://answers.ros.org/question/220305/how-can-i-integrate-my-ros-package-with-travis-continuous-integration/)
