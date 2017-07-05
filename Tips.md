@@ -26,8 +26,8 @@ sudo apt-get update
 sudo apt-get install libopencv-nonfree-dev
 ```
 
-#Matlab on Windows
-##kubuntu のturtlebotと繋ぐ
+# Matlab on Windows
+## kubuntu のturtlebotと繋ぐ
 - kubuntu
   - `gazebo TrutleBot World` を開く。コンソールに色々出てきてgazeboが立ち上がる。
   - `Publicized address: 192.168.183.128` がgazeboっぽい。
