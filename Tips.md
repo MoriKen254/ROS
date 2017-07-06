@@ -45,7 +45,7 @@ sudo apt-get install libopencv-nonfree-dev
       - VMと接続中のネットワーク(デフォはパブリックだった)のTCPを解放する。UDPは切っても切らなくても挙動は変わらない。
       - 運が良ければpublish時にWindowsが勝手にダイアログを出してくれるので、そのまま許可する。
 
-#QtCreaterでパスが通らず補完できない
+# QtCreaterでパスが通らず補完できない
 - 下記の`bash`を`source`する．
   ```bash
   #!/bin/bash
