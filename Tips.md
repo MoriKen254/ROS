@@ -1,14 +1,29 @@
-#ros_control
-##指令値テスト
+# Vimでlaunch ファイルをxmlのフォーマットで読み込む
+
+```bash
+cd ~/.vim
+mkdir ftdetect
+vim launch.vim
+```
+
+```vim
+".launchを開くときはファイルタイプをxmlにする
+au BufNewFile,BufRead *.launch setf xml
+```
+
+- 出展：[vimが自動認識するファイルタイプを自分で設定する](https://syguer.hatenablog.com/entry/2013/12/25/002023)
+
+# ros_control
+## 指令値テスト
 ```bash
 rostopic pub /fr01/steer_right_front_joint_position_controller/command std_msgs/Float64 -r 1 -- -1
 ```
 
-#Compress Image
-##Python
+# Compress Image
+## Python
 - http://wiki.ros.org/ja/rospy_tutorials/Tutorials/WritingImagePublisherSubscriber
 
-##C++
+## C++
 - 情報がなさすぎるのでサンプルをメモしておく。たったコレだけのことなのに…。
 ```cpp
 void hogeClass::CompressedImageSubscribe (const sensor_msgs::CompressedImagePtr & compress_img_msg)
